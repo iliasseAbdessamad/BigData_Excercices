@@ -23,11 +23,11 @@
 <img src="./imgs/2.png">
 <br/>
 <h4 style="color:darkred">Etape 2 : Manipulation du HDFS</h4>
-<p style="color:blue"><b>1 - Création de l'arborescence suivante dans la racine du système de fichier distribué Hadoop (HDFS): </b></p>
+<p style="color:blue"><b>1 - Création de l'arborescence suivante dans la racine du système de fichiers distribué Hadoop (HDFS): </b></p>
 <img src="./imgs/arborescence.png">
 <p>
 	Pour créer cette arborescence de répertoires, on doit d'abord accéder au conteneur namenode, (car c'est lui qui gère le stockage
-	des fichier sur le HDFS) via la commande suivante:	
+	des fichiers sur le HDFS) via la commande suivante:	
 </p>
 <img src="./imgs/3.png">
 <p>
@@ -41,7 +41,7 @@
 <br/>
 <p style="color:blue">
 	<b>
-		1 - Création des fichiers CoursCPP1, CoursCPP2, CoursCPP3 dans dans le répertoire CPP, puis ajout du contenu 
+		2 - Création des fichiers CoursCPP1, CoursCPP2, CoursCPP3 dans dans le répertoire CPP, puis l'ajout du contenu 
 		dans chaqu'un entre eux
 	</b>
 </p>
@@ -51,7 +51,7 @@
 <p>Affichage de l'état actuelle de l'arborescence</p>
 <img src="./imgs/7.png">
 
-<p>Commandes qui permettent d'ajouter du contenu dans chacun de ces fichiers</p>
+<p>Les commandes qui permettent d'ajouter du contenu dans chacun de ces fichiers</p>
 <img src="./imgs/8.png">
 
 <br />
@@ -65,7 +65,7 @@
 <br />
 <p style="color:blue">
 	<b>
-		4 - Copier les fichiers /BDDC/CPP/Cours/CoursCPP1, /BDDC/CPP/Cours/CoursCPP2, et /BDDC/CPP/Cours/CoursCPP3 vers le repersoire
+		4 - Copie les fichiers /BDDC/CPP/Cours/CoursCPP1, /BDDC/CPP/Cours/CoursCPP2, et /BDDC/CPP/Cours/CoursCPP3 vers le repersoire
 		/BDDC/JAVA/Cours : 
 	</b>
 </p>
@@ -93,7 +93,7 @@
 <br />
 <p style="color:blue">
 	<b>
-		6 - Création du répertoire Mes_TPs dans le système du fichier locale, et création des fichiers TP1CPP, 
+		6 - Création du répertoire Mes_TPs dans le système du fichiers local, et création des fichiers TP1CPP, 
 		TP2CPP, TP1JAVA, TP2JAVA, TP3JAVA dans ce répertoire
 	</b>
 </p>
@@ -102,14 +102,14 @@
 <br />
 <p style="color:blue">
 	<b>
-		7 - Copier les fichiers TP1CPP, TP2CPP à partir du système de fichier local, vers le répertoire /BDDC/CPP/TPs du HDFS
+		7 - Copie les fichiers TP1CPP, TP2CPP à partir du système de fichiers local, vers le répertoire /BDDC/CPP/TPs du HDFS
 	</b>
 </p>
 <img src="./imgs/16.png">
 <br />
 <p style="color:blue">
 	<b>
-		8 - Copier les fichiers TP1JAVA, TP2JAVA à partir du système de fichier local, vers le répertoire /BDDC/JAVA/TPs du HDFS
+		8 - Copier les fichiers TP1JAVA, TP2JAVA à partir du système de fichiers local, vers le répertoire /BDDC/JAVA/TPs du HDFS
 	</b>
 </p>
 <img src="./imgs/17.png">
