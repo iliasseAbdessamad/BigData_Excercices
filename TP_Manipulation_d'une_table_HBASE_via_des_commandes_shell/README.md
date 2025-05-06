@@ -22,7 +22,7 @@
 	<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite : </b>
 	<ul>
 		<li>Gestion des régions</li>
-		<li>Géstion de lecture/ecriture des données dans ses régions/li>
+		<li>Géstion de lecture/ecriture des données dans ses régions</li>
 		<li>Stock les données physiquement sous forme de fichiers HFiles dans le HDFS</li>
 		<li>Stock les logs sous forme de fichiers WAL (Write-Ahead Log) dans HDFS afin d'assurer la durabilité du 	                        système</li>
 		<li>Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
