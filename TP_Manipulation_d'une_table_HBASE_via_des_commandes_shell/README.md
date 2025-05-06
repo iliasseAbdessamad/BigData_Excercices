@@ -11,7 +11,7 @@
 	Dans ce TP, on va créer un cluster HBase en utilisant Docker, ce cluster est composé des noeuds suivants : 
 	<ul>
 		<li>
-			<b>un noeud HMaster, qui parmis ses rôles les plus principaux on trouve : <b>
+			<b>un noeud HMaster, qui parmis ses rôles les plus principaux on trouve : </b>
 			<ul>
 				<li>Assignation des région aux RegionServers</li>
 				<li>Géstion de split quand une region devient trop massive en terme de nombre de données</li>
@@ -21,7 +21,7 @@
 			
 		</li>
 		<li>
-			<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite : <b>
+			<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite : </b>
 			<ul>
 				<li>Gestion des régions</li>
 				<li>Géstion de lecture/ecriture des données dans ses régions/li>
@@ -31,7 +31,7 @@
 			</ul>
 		</li>
 		<li>
-			<b>un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  : <b>
+			<b>un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  : </b>
 			<ul>
 				<li>De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)</li>
 				<li>La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)</li>
@@ -42,18 +42,18 @@
 	</ul>
 </i>
 <br />
-<h3>Etape 1 : Initialisation du cluster via docker<h3>
+<h3>Etape 1 : Initialisation du cluster via docker</h3>
 <p><b>Voici la commande qui permet d'initialiser le cluster sous forme de conteneurs docker</b></p>
 <img src="./imgs/3.png" />
 
 <br />
-<h3>Etape 2 : Réalisation du TP<h3>
+<h3>Etape 2 : Réalisation du TP</h3>
 
 <p><b>1 - Création de la table users avec deux familles de colonnes "info" et "contact"</b></p>
 <i>
 	Dans notre cas on doit d'abord accéder au cluster <b>cluster_hbase-hbase-master-1</b> puisque ce dérnier installe le client HBase pour interagir avec le service HMaser, puis on tape
 	 la commande "hbase shell" afin d'interagir avec HMaster via un shell en ligne de commande
-<i>
+</i>
 <img src="./imgs/4.png" />
 
 <br />
