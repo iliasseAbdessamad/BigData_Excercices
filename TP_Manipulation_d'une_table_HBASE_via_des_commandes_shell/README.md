@@ -10,7 +10,7 @@
 <i>
 	Dans ce TP, on va créer un cluster HBase en utilisant Docker, ce cluster est composé des noeuds suivants : 
 	
-	**un noeud HMaster, qui parmis ses rôles les plus principaux on trouve :**
+	<b>un noeud HMaster, qui parmis ses rôles les plus principaux on trouve :</b>
 	
 	- Assignation des région aux RegionServers</li>
 	- Géstion de split quand une region devient trop massive en terme de nombre de données
@@ -19,7 +19,7 @@
 	
 			
 		
-	**un noeud RegionServer, qui parmis ses rôles les plus principaux on cite :**
+	<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite :</b>
 	- Gestion des régions
 	- Géstion de lecture/ecriture des données dans ses régions
 	- Stock les données physiquement sous forme de fichiers HFiles dans le HDFS
@@ -27,7 +27,7 @@
 	- Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
 	- accélerer la lecture
 	
- 	**un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  :**
+ 	<b>un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  :</b>
 	- De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)
 	- La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)
 	- En cas de plusieurs HMaster, Zookeeper détermine le leader actif 
@@ -78,7 +78,7 @@
 <img src="./imgs/11.png" />
 
 <br />
-<p><b>9 - Ajout d'une nouvelle colonne (fax) dans la famille de colonnes contact</b></p>
+<p><b>9 - Ajout d'une nouvelle colonne (fax) dans la famille de colonnes contact via la commande alter</b></p>
 <p>
 Cette opération ne peut pas être effectuée car les colonnes qualifiers (email, phone, fax ..) ne font pas partie de la structure de la table, cependant on 
 peut durant l'ajout d'un nouvelle enregistrement via la commande "put" spécifier une valeur à la colonne contact:fax
