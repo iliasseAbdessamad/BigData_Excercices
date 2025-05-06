@@ -10,28 +10,27 @@
 <i>
 	Dans ce TP, on va créer un cluster HBase en utilisant Docker, ce cluster est composé des noeuds suivants : 
 	
-	<b>un noeud HMaster, qui parmis ses rôles les plus principaux on trouve :</b>
-	
-	- Assignation des région aux RegionServers</li>
-	- Géstion de split quand une region devient trop massive en terme de nombre de données
-	- Réassignation des régions depuis les RegionServers mort vers des RegionServers actifs
-	- Géstion de la structure de la base de données et des tables
+**un noeud HMaster, qui parmis ses rôles les plus principaux on trouve :**
+- Assignation des région aux RegionServers</li>
+- Géstion de split quand une region devient trop massive en terme de nombre de données
+- Réassignation des régions depuis les RegionServers mort vers des RegionServers actifs
+- Géstion de la structure de la base de données et des tables
 	
 			
 		
-	<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite :</b>
-	- Gestion des régions
-	- Géstion de lecture/ecriture des données dans ses régions
-	- Stock les données physiquement sous forme de fichiers HFiles dans le HDFS
-	- Stock les logs sous forme de fichiers WAL (Write-Ahead Log) dans HDFS afin d'assurer la durabilité du 	                        système
-	- Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
-	- accélerer la lecture
+**un noeud RegionServer, qui parmis ses rôles les plus principaux on cite :**
+- Gestion des régions
+- Géstion de lecture/ecriture des données dans ses régions
+- Stock les données physiquement sous forme de fichiers HFiles dans le HDFS
+- Stock les logs sous forme de fichiers WAL (Write-Ahead Log) dans HDFS afin d'assurer la durabilité du système
+- Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
+- accélerer la lecture
 	
- 	<b>un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  :</b>
-	- De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)
-	- La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)
-	- En cas de plusieurs HMaster, Zookeeper détermine le leader actif 
- 	- Verouillage des métadonnées dans le cas d'un accès concurrent
+**un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  :**
+- De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)
+- La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)
+- En cas de plusieurs HMaster, Zookeeper détermine le leader actif 
+- Verouillage des métadonnées dans le cas d'un accès concurrent
 	
 </i>
 <br />
