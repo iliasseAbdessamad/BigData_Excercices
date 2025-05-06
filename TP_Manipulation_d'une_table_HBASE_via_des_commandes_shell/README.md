@@ -10,34 +10,28 @@
 <i>
 	Dans ce TP, on va créer un cluster HBase en utilisant Docker, ce cluster est composé des noeuds suivants : 
 	
-	<b>un noeud HMaster, qui parmis ses rôles les plus principaux on trouve : </b>
-	<ul>
-		<li>Assignation des région aux RegionServers</li>
-		<li>Géstion de split quand une region devient trop massive en terme de nombre de données</li>
-		<li>Réassignation des régions depuis les RegionServers mort vers des RegionServers actifs</li>
-		<li>Géstion de la structure de la base de données et des tables</li>
-	</ul>
+	**un noeud HMaster, qui parmis ses rôles les plus principaux on trouve :**
+	
+	- Assignation des région aux RegionServers</li>
+	- Géstion de split quand une region devient trop massive en terme de nombre de données
+	- Réassignation des régions depuis les RegionServers mort vers des RegionServers actifs
+	- Géstion de la structure de la base de données et des tables
+	
 			
 		
-	<b>un noeud RegionServer, qui parmis ses rôles les plus principaux on cite : </b>
-	<ul>
-		<li>Gestion des régions</li>
-		<li>Géstion de lecture/ecriture des données dans ses régions</li>
-		<li>Stock les données physiquement sous forme de fichiers HFiles dans le HDFS</li>
-		<li>Stock les logs sous forme de fichiers WAL (Write-Ahead Log) dans HDFS afin d'assurer la durabilité du 	                        système</li>
-		<li>Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
-		 accélerer la lecture</li>
-	</ul>
-		
-		
-	<b>un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  : </b>
-	<ul>
-		<li>De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)</li>
-		<li>La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)</li>
-		<li>En cas de plusieurs HMaster, Zookeeper détermine le leader actif </li>
-		<li>Verouillage des métadonnées dans le cas d'un accès concurrent</li>
-	</ul>
-		
+	**un noeud RegionServer, qui parmis ses rôles les plus principaux on cite :**
+	- Gestion des régions
+	- Géstion de lecture/ecriture des données dans ses régions
+	- Stock les données physiquement sous forme de fichiers HFiles dans le HDFS
+	- Stock les logs sous forme de fichiers WAL (Write-Ahead Log) dans HDFS afin d'assurer la durabilité du 	                        système
+	- Maintient un MemStore qui est un cache mémoire pour les écritures récentes avant flush vers HDFS pour 
+	- accélerer la lecture
+	
+ 	**un noeud ZooKeeper, qui dans le cas d'un cluster HBase il permet  :**
+	- De découvrir les services (Les client hbase, utilisent zookeeper pour trouver le HMaster actif, et les RegionsServers)
+	- La coordination (HMaster utilise Zookeeper pour suivre les RegionsServers disponible)
+	- En cas de plusieurs HMaster, Zookeeper détermine le leader actif 
+ 	- Verouillage des métadonnées dans le cas d'un accès concurrent
 	
 </i>
 <br />
