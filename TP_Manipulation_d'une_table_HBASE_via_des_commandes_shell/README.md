@@ -92,7 +92,7 @@ peut durant l'ajout d'un nouvelle enregistrement via la commande "put" spécifie
 <img src="./imgs/13.png" />
 
 <br />
-<p><b>11 - Affichage de la déscription de la table (familles de clonnes et leurs options)</b></p>
+<p><b>12 - Affichage de la déscription de la table (familles de clonnes et leurs options)</b></p>
 <img src="./imgs/14.png" />
 
 
